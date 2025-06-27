@@ -1,6 +1,6 @@
 <?php
 require 'db.php';
-require 'mailer/send_mail.php';
+require 'send_mail.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $token = bin2hex(random_bytes(50));
