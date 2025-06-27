@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'db.php';
-require 'mailer/send_mail.php';
+require 'send_mail.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
